@@ -1967,6 +1967,11 @@
   resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.11.6.tgz#cee20bd55e68a1720bdab363ecf0c821ded4cd45"
   integrity sha512-50/17A98tWUfQ176raKiOGXuYpLyyVMkxxG6oylzL3BPOlA6ADGdK7EYunSa4I064xerltq9TGXs8HmOk5E+vw==
 
+"@remix-run/router@1.6.1":
+  version "1.6.1"
+  resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.6.1.tgz#3a3a408481a3796f45223a549c2571517bc8af2d"
+  integrity sha512-YUkWj+xs0oOzBe74OgErsuR3wVn+efrFhXBWrit50kOiED+pvQe2r6MWY0iJMQU/mSVKxvNzL4ZaYvjdX+G7ZA==
+
 "@rushstack/eslint-patch@^1.1.3":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.2.0.tgz#8be36a1f66f3265389e90b5f9c9962146758f728"
@@ -2536,14 +2541,15 @@
   resolved "https://registry.yarnpkg.com/@web3uikit/config/-/config-0.1.2.tgz#0f61701c094ce40269c59e61cb19d8326dba76ec"
   integrity sha512-fOY0jxen7nEfivZc7BKm63WRcNEncidFhk+dIVR/0bj4tt5Xl0xyomPgyQqe38d3/PJ3RvqVTdupWFbWNJULkA==
 
-"@web3uikit/core@^0.1.5":
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/@web3uikit/core/-/core-0.1.5.tgz#d5f819eb976e118fda77fba7d2f5cf0f5e867023"
-  integrity sha512-nMFSMcoHP2VyCKVUKoSUtmJApeWhN58QR5XVEV8pXlGLpnQA2boqOu7mJtTQCdHPvlv8LoOqmvnuXpMhv/zGdQ==
+"@web3uikit/core@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@web3uikit/core/-/core-1.0.4.tgz#e762e3d201dd3b66cbf00b42e67e8e61a1c9d868"
+  integrity sha512-woZuFbTcmSSHYiaHVsKTzrINNQCNO/VrN8RTjhPgiJDWw85sy2Sqza7bZDlz89KTy91IOEbpKOgpusPeZ6bfuA==
   dependencies:
     "@web3uikit/config" "*"
     "@web3uikit/icons" "*"
     "@web3uikit/styles" "*"
+    react-router-dom "^6.3.0"
 
 "@web3uikit/icons@*", "@web3uikit/icons@^0.4.1":
   version "0.4.1"
@@ -6042,6 +6048,21 @@ react-remove-scroll@^2.5.5:
     tslib "^2.1.0"
     use-callback-ref "^1.3.0"
     use-sidecar "^1.1.2"
+
+react-router-dom@^6.3.0:
+  version "6.11.1"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.11.1.tgz#af226bae950deb437208a606a47cf5c2d72c55dc"
+  integrity sha512-dPC2MhoPeTQ1YUOt5uIK376SMNWbwUxYRWk2ZmTT4fZfwlOvabF8uduRKKJIyfkCZvMgiF0GSCQckmkGGijIrg==
+  dependencies:
+    "@remix-run/router" "1.6.1"
+    react-router "6.11.1"
+
+react-router@6.11.1:
+  version "6.11.1"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.11.1.tgz#6e58458c03e16834dda2b433c6adb9e7c2b1d7a8"
+  integrity sha512-OZINSdjJ2WgvAi7hgNLazrEV8SGn6xrKA+MkJe9wVDMZ3zQ6fdJocUjpCUCI0cNrelWjcvon0S/QK/j0NzL3KA==
+  dependencies:
+    "@remix-run/router" "1.6.1"
 
 react-style-singleton@^2.2.1:
   version "2.2.1"
